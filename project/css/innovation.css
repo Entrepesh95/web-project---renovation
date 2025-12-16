@@ -1,0 +1,76 @@
+#webpage_content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#innovation_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITLE */
+#innovation_container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* INTRO PARAGRAPH */
+.innovation_intro {
+    text-align: center;
+    max-width: 800px;
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* GRID */
+.innovation_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* CARDS */
+.innovation_card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+.innovation_card h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.innovation_card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* HOVER EFFECT */
+.innovation_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .innovation_grid {
+        grid-template-columns: 1fr;
+    }
+
+    #innovation_container {
+        width: 90%;
+    }
+}

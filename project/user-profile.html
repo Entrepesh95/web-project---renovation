@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Global Cleantech Directory – User Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link href="css/general.css" type="text/css" rel="stylesheet" />
+  <link href="css/header.css" type="text/css" rel="stylesheet" />
+  <link href="css/help.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <!--navbar -->
+  <header id="header_container">
+
+        <a href="./index.html" id="logo_container">
+            <img id="logo_img" src="images/Global-Logo.png" alt="img_logo">
+        </a>
+
+
+        <ul id="navigation_bar">
+            <li><a class="btn_navigation_bar" href="./identity.html">IDENTITY</a></li>
+            <li><a class="btn_navigation_bar" href="./innovation.html">INNOVATION</a></li>
+            <li id="explore_hub">
+                <a class="btn_navigation_bar" href="./explore.html">EXPLORE HUB</a>
+                <ul>
+                    <li><a class="btn_navigation_bar" href="./signin-user.html">USER ACCESS</a></li>
+                    <li><a class="btn_navigation_bar" href="./signin-cleantech.html">CLEANTECH ACCESS</a></li>
+                    <li><a class="btn_navigation_bar" href="./membership.html">MEMBERSHIP</a></li>
+                </ul>
+            </li>
+            <li><a class="btn_navigation_bar" href="./help.html">HELP</a></li>
+        </ul>
+
+
+
+        <div id="sign_in_container">
+            <a class="btn_navigation_bar" href="#">SIGN OUT</a>
+        </div>
+
+    </header>
+
+  <main>
+    <!-- Main profile section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">User Profile</h2>
+
+        <!-- Two-column layout: main profile + contact card -->
+        <div class="profile-grid">
+          <!-- Left: education, skills, achievements -->
+          <div class="card profile-main">
+            <!-- Profile header info -->
+            <div class="profile-header">
+              <div class="profile-avatar">SC</div>
+              <div>
+                <h3>Dr. Sarah Chen</h3>
+                <p class="profile-headline">
+                  Climate Tech Investor &amp; Sustainability Advisor
+                </p>
+                <p class="profile-role">
+                  Senior Partner · GreenFuture Ventures · Singapore, Singapore
+                </p>
+              </div>
+            </div>
+
+            <p class="section-lead small">
+              Passionate about accelerating the global transition to clean energy through strategic
+              investments and partnerships. With over 15 years of experience in sustainable finance and
+              cleantech innovation, I help innovative companies scale their impact while delivering strong
+              returns. My focus areas include renewable energy, energy storage, and circular economy
+              solutions.
+            </p>
+
+            <div class="section-spacer-small"></div>
+
+            <!-- Education timeline -->
+            <h3 class="section-subtitle">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h4>Ph.D. in Environmental Engineering</h4>
+                <p>Stanford University · 2008</p>
+              </div>
+              <div class="timeline-item">
+                <h4>M.Sc. in Sustainable Development</h4>
+                <p>University of Cambridge · 2004</p>
+              </div>
+              <div class="timeline-item">
+                <h4>B.Sc. in Chemical Engineering</h4>
+                <p>National University of Singapore · 2002</p>
+              </div>
+            </div>
+
+            <div class="section-spacer-small"></div>
+
+            <!-- Skills tags -->
+            <h3 class="section-subtitle">Skills</h3>
+            <div class="tag-row">
+              <span class="tag">Climate Finance</span>
+              <span class="tag">Renewable Energy Investment</span>
+              <span class="tag">ESG Strategy</span>
+              <span class="tag">Due Diligence</span>
+              <span class="tag">Portfolio Management</span>
+            </div>
+
+            <div class="section-spacer-small"></div>
+
+            <!-- Achievements cards -->
+            <h3 class="section-subtitle">Achievements</h3>
+            <div class="achievement-grid">
+              <div class="card tiny">
+                <strong>Top 100 Climate Leaders Award</strong>
+                <p>Global Climate Action Summit · 2024</p>
+              </div>
+              <div class="card tiny">
+                <strong>$500M+ in Cleantech Investments</strong>
+                <p>GreenFuture Ventures · 2023</p>
+              </div>
+              <div class="card tiny">
+                <strong>Sustainability Leadership Recognition</strong>
+                <p>World Economic Forum · 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: contact card (opens modal) -->
+          <aside class="card profile-contact">
+            <h3>Connect</h3>
+            <p>
+              Interested in connecting? Send an internal message to start the conversation.
+            </p>
+            <button class="btn btn-primary full-width" id="contact-open">Contact Me</button>
+
+            <div class="section-spacer-small"></div>
+
+            <h4 class="section-subtitle small">Quick Info</h4>
+            <ul class="bullet-list small">
+              <li>Company: GreenFuture Ventures</li>
+              <li>Role: Senior Partner</li>
+              <li>Location: Singapore, Singapore</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact modal (JS handles open / close) -->
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="contact-close" aria-label="Close">×</button>
+      <h3>Contact Dr. Sarah Chen</h3>
+      <form class="form">
+        <label>
+          Your Name
+          <input type="text" placeholder="Enter your full name" required />
+        </label>
+        <label>
+          Your Email
+          <input type="email" placeholder="your.email@example.com" required />
+        </label>
+        <label>
+          Subject
+          <input type="text" placeholder="What is this regarding?" required />
+        </label>
+        <label>
+          Message
+          <textarea rows="4" placeholder="Type your message here..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

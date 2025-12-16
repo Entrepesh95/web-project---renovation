@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <title>Global Cleantech Directory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="css/general.css" type="text/css" rel="stylesheet" />
+    <link href="css/header.css" type="text/css" rel="stylesheet" />
+    <link href="css/help.css" type="text/css" rel="stylesheet" />
+    <script src="js/jQuery.js"></script>
+    <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header_container">
+
+        <a href="./index.html" id="logo_container">
+            <img id="logo_img" src="images/Global-Logo.png" alt="img_logo">
+        </a>
+
+
+        <ul id="navigation_bar">
+            <li><a class="btn_navigation_bar" href="./identity.html">IDENTITY</a></li>
+            <li><a class="btn_navigation_bar" href="./innovation.html">INNOVATION</a></li>
+            <li id="explore_hub">
+                <a class="btn_navigation_bar" href="./explore.html">EXPLORE HUB</a>
+                <ul>
+                    <li><a class="btn_navigation_bar" href="./signin-user.html">USER ACCESS</a></li>
+                    <li><a class="btn_navigation_bar" href="./signin-cleantech.html">CLEANTECH ACCESS</a></li>
+                    <li><a class="btn_navigation_bar" href="./membership.html">MEMBERSHIP</a></li>
+                </ul>
+            </li>
+            <li><a class="btn_navigation_bar" href="./help.html">HELP</a></li>
+        </ul>
+
+
+        <div id="sign_in_container">
+            <a class="btn_navigation_bar" href="#">SIGN IN</a>
+        </div>
+
+    </header>
+
+    <div id="webpage_content">
+        <div id="container_1">
+            <div>The Global Cleantech Directory is designed to connect innovators, creators, and leaders in clean
+                technology
+                from around the world. Our mission is simple but powerful: <b>to create solutions that harmonize humans,
+                    technology, and nature</b>, helping build a cleaner, greener, and more sustainable future.</div>
+            <div>As a member, you have access to a variety of tools and resources to showcase your work, connect with
+                like-minded businesses, investors, and partners, and amplify the impact of your innovations. Your
+                inclusion
+                in the directory is more than a listing—it’s an invitation to join a global community dedicated to
+                sustainability and meaningful collaboration.</div>
+            <div><b>Getting Started</b>
+                <ul>
+                    <li>Explore your dashboard to manage your profile and highlight your solutions.</li>
+                    <li>Use our networking features to connect with other innovators and potential partners.</li>
+                    <li>Access resources designed to help you maximize your presence and impact within the community.
+                    </li>
+                </ul>
+            </div>
+            <div><b>Support</b><br />
+                Our team is here to assist you every step of the way. Whether you need guidance on using the platform,
+                tips for optimizing your listing, or help connecting with other members, we’re committed to ensuring
+                your experience is as rewarding and impactful as possible.
+                <br /><br />
+                Together, we can tackle environmental challenges and create a world where <b>humans and nature thrive
+                    together</b>.
+            </div>
+        </div>
+
+        <div id="help_request_container">
+            <h2>Need Assistance?</h2>
+            <p>Fill out the form below and our team will get back to you shortly.</p>
+            <form id="help_request_form" action="YOUR_BACKEND_SCRIPT_URL" method="POST">
+                <label for="help_name">Name</label>
+                <input type="text" id="help_name" name="name" required placeholder="Your name">
+
+                <label for="help_email">Email</label>
+                <input type="email" id="help_email" name="email" required placeholder="Your email">
+
+                <label for="help_subject">Subject</label>
+                <input type="text" id="help_subject" name="subject" required placeholder="Subject">
+
+                <label for="help_message">Message</label>
+                <textarea id="help_message" name="message" rows="5" required
+                    placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Global Cleantech Directory – Cleantech Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link href="css/general.css" type="text/css" rel="stylesheet" />
+  <link href="css/header.css" type="text/css" rel="stylesheet" />
+  <link href="css/identity.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Reused navbar -->
+  <header id="header_container">
+
+        <a href="./index.html" id="logo_container">
+            <img id="logo_img" src="images/Global-Logo.png" alt="img_logo">
+        </a>
+
+
+        <ul id="navigation_bar">
+            <li><a class="btn_navigation_bar" href="./identity.html">IDENTITY</a></li>
+            <li><a class="btn_navigation_bar" href="./innovation.html">INNOVATION</a></li>
+            <li id="explore_hub">
+                <a class="btn_navigation_bar" href="./explore.html">EXPLORE HUB</a>
+                <ul>
+                    <li><a class="btn_navigation_bar" href="./signin-user.html">USER ACCESS</a></li>
+                    <li><a class="btn_navigation_bar" href="./signin-cleantech.html">CLEANTECH ACCESS</a></li>
+                    <li><a class="btn_navigation_bar" href="./membership.html">MEMBERSHIP</a></li>
+                </ul>
+            </li>
+            <li><a class="btn_navigation_bar" href="./help.html">HELP</a></li>
+        </ul>
+
+
+
+        <div id="sign_in_container">
+            <a class="btn_navigation_bar" href="#">SIGN IN</a>
+        </div>
+
+    </header>
+
+  <main>
+    <!-- Centered cleantech sign-in card -->
+    <section class="section section-alt">
+      <div class="container" style="max-width: 640px;">
+        <div class="card">
+          <h2 class="section-title">Cleantech Sign In</h2>
+          <p class="section-lead small">
+            Access your company dashboard and showcase your impact.
+          </p>
+
+          <!-- Form -->
+          <form class="form" style="margin-top: 1.5rem;" method="post" action="business-profile.html">
+            <label>
+              Company Email
+              <input type="email" placeholder="company@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Enter your password" required />
+            </label>
+
+            <div class="form-row">
+              <label class="checkbox-label">
+                <input type="checkbox" /> Remember me
+              </label>
+              <a href="#" class="link-small">Forgot password?</a>
+            </div>
+            <a href="business-profile.html">
+              <button class="btn btn-primary full-width">
+                Sign In to Dashboard
+              </button>
+            </a>
+          </form>
+
+          <!-- Divider -->
+          <div class="divider">Or continue with</div>
+
+          <!-- Social buttons -->
+          <div class="social-row">
+            <button class="btn btn-outline full-width">Google</button>
+            <button class="btn btn-outline full-width">LinkedIn</button>
+          </div>
+
+          <!-- Registration link -->
+          <p class="small-text" style="margin-top: 1.25rem; text-align:center;">
+            Don't have a company account?
+            <a href="#" class="link-small">Register your cleantech company</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
